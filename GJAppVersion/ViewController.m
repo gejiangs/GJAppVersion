@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "GJAppVersion.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self checkNewVersion];
+}
+
+-(void)checkNewVersion
+{
+    [[GJAppVersion manager] checkNewVesionWithBunldID:@"com.dacheng.OBDPlus" block:^(BOOL hasNew, GJVersionInfo * _Nonnull version) {
+        NSLog(@"hasNew:%@", hasNew ? @"1" : @"0");
+    }];
 }
 
 

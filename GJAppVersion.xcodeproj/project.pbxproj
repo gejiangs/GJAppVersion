@@ -13,6 +13,7 @@
 		AD02AF9A22703F350043BF9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD02AF9922703F350043BF9A /* Assets.xcassets */; };
 		AD02AF9D22703F350043BF9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD02AF9B22703F350043BF9A /* LaunchScreen.storyboard */; };
 		AD02AFA022703F350043BF9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD02AF9F22703F350043BF9A /* main.m */; };
+		AD02AFA922703F4E0043BF9A /* GJAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = AD02AFA822703F4E0043BF9A /* GJAppVersion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		AD02AF9C22703F350043BF9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD02AF9E22703F350043BF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD02AF9F22703F350043BF9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD02AFA722703F4E0043BF9A /* GJAppVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJAppVersion.h; sourceTree = "<group>"; };
+		AD02AFA822703F4E0043BF9A /* GJAppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJAppVersion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		AD02AF8F22703F330043BF9A /* GJAppVersion */ = {
 			isa = PBXGroup;
 			children = (
+				AD02AFA622703F4E0043BF9A /* Resouce */,
 				AD02AF9022703F330043BF9A /* AppDelegate.h */,
 				AD02AF9122703F330043BF9A /* AppDelegate.m */,
 				AD02AF9322703F330043BF9A /* ViewController.h */,
@@ -69,6 +73,15 @@
 				AD02AF9F22703F350043BF9A /* main.m */,
 			);
 			path = GJAppVersion;
+			sourceTree = "<group>";
+		};
+		AD02AFA622703F4E0043BF9A /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				AD02AFA722703F4E0043BF9A /* GJAppVersion.h */,
+				AD02AFA822703F4E0043BF9A /* GJAppVersion.m */,
+			);
+			path = Resouce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD02AF9522703F330043BF9A /* ViewController.m in Sources */,
+				AD02AFA922703F4E0043BF9A /* GJAppVersion.m in Sources */,
 				AD02AFA022703F350043BF9A /* main.m in Sources */,
 				AD02AF9222703F330043BF9A /* AppDelegate.m in Sources */,
 			);
@@ -288,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZP9CL2A5P;
 				INFOPLIST_FILE = GJAppVersion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZP9CL2A5P;
 				INFOPLIST_FILE = GJAppVersion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
